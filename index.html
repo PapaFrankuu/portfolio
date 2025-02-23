@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediastyle.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rishan Shrestha</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rishan Shrestha</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/main_photo.jpg" alt="profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Rishan Shrestha</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ')">My CV</button>
+             <!-- window.open('./assets/CV.pdf') -->
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+        </div>
+        <div id="socials-container">
+            <a style="color: rgb(9,103,255);" href="https://www.facebook.com/profile.php?id=100072666426448" target="_blank"><img src="./assets/fb.png" alt="" class="icon"></a>
+            <a href="https://www.instagram.com/i_beat_my_kiddo/" target="_blank"><img src="./assets/insta.png" alt="" class="icon"></a>
+            <a style="color:rgb(0,119,181)" href="https://www.linkedin.com/in/rishan-shrestha-0b0b3b1b3/" target="_blank"><img src="./assets/linkedin.png" alt="" class="icon"></a>
+            <a href="https://github.com/PapaFrankuu" target="_blank"><img src="/assets/github.png" alt="" class="icon"></a>
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
