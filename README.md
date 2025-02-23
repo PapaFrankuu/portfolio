@@ -1,1 +1,1 @@
-# portfolio
+This is my personal portfolio, born out of pure inspiration! After watching some incredible YouTube videos of people showcasing their portfolios, I was instantly hooked. I couldn't resist the urge to create my own, and I poured all my creativity into bringing it to life. Every detail reflects my passion and vision—this isn't just a portfolio, it's a piece of me! It's still a work in progress, but I'm excited to keep refining it and making it even better!
