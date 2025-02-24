@@ -5,7 +5,7 @@
 }
 body {
   font-family: "poppins", "sans-serif";
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 html {
   scroll-behavior: smooth;
@@ -90,7 +90,7 @@ a:hover {
   color: black;
   font-size: 1.5rem;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu-links li {
   list-style: none;
@@ -112,104 +112,117 @@ a:hover {
 }
 .hamburger-icon span:first-child {
   opacity: 1;
+  transform: none;
 }
 .hamburger-icon span:first-child {
   transform: none;
 }
 /* sections */
-section{
+section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
-.section-container{
-  display:flex;
+.section-container {
+  display: flex;
 }
 /* profile */
-#profile{
+#profiles {
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
-.section__pic-container{
+.section__pic-container {
   display: flex;
   height: 100%;
   width: 100%;
-  max-height: 400px ;
+  max-height: 400px;
   max-width: 400px;
   margin: auto 0;
-  overflow:hidden;
+  border-radius: 50%;
+  overflow: hidden;
 }
-.section__text{
+.section__text {
   align-self: center;
   text-align: center;
 }
-.section__text p{
+.section__text p {
   font-weight: 600;
-
 }
-.section__text__p1{
+.section__text__p1 {
   text-align: center;
-  
 }
-.section__text__p2{
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-
 }
-.title{
+.title {
   font-size: 3rem;
   text-align: center;
-
 }
-#socials-container{
+#socials-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 /* icons */
-.icon{
+.icon {
   cursor: pointer;
   height: 2rem;
 }
 /* buttons */
-.btn-contaioner{
+.btn-contaioner {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.btn{
+.btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding:1rem;
-  width:8rem;
+  padding: 1rem;
+  width: 8rem;
   border-radius: 2rem;
 }
-.btn-color-1,.btn-color-2{
-  border:rgb(53,53,53)0.1rem solid;
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 .btn-color-1:hover,
-.btn-color-2:hover{
+.btn-color-2:hover {
   cursor: pointer;
 }
 .btn-color-1,
-.btn-color-2:hover{
-  background: rgb(53,53,53);
-  color:white;
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
-.btn-color-1:hover{
-  background:rgb(0, 0, 0) ;
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
 }
-.btn-color-2{
+.btn-color-2 {
   background: none;
 }
-.btn-color-2:hover{
-  border:rgb(255, 255, 255)0.1rem solid;
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
-.btn-container{
+.btn-container {
   gap: 1rem;
+}
+.icon {
+  transition: transform 200ms ease-in-out;
+  transition-behavior: smooth;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+.insta-gif {
+  animation-play-state: paused;
+  animation-duration: 1s; /* Assuming your GIF duration is 1 second */
+}
+.insta-gif:hover {
+  animation-play-state: running;
 }
