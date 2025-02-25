@@ -21,8 +21,8 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><button id="dark-mode-toggle">
-                    <img id="dark-mode-icon" class="icon" src="./assets/dark.png" alt="Dark Mode" width="30">
-                </button>
+                        <img id="dark-mode-icon" class="icon" src="./assets/dark.png" alt="Dark Mode" width="30">
+                    </button>
                 </li>
             </ul>
         </div>
@@ -37,10 +37,13 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <button id="hamburger-dark-mode-toggle">
+                    <li><img id="hamburger-dark-mode-icon" class="icon" src="./assets/dark.png" alt="Dark Mode"
+                            width="30"></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -69,6 +72,7 @@
                         class="icon"></a>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#about'">
     </section>
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
@@ -96,11 +100,15 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I'm Rishan Shrestha, a <b>web developer</b> with over a year of experience. I'm currently pursuing a <b>BSc (Hons) in IT</b> and love building dynamic, user-friendly websites. Aside from coding, I'm into <b>fishkeeping and aquascaping</b>, with over a year of experience creating and maintaining beautiful aquariums.
+                    <p>I'm Rishan Shrestha, a <b>web developer</b> with over a year of experience. I'm currently
+                        pursuing a <b>BSc (Hons) in IT</b> and love building dynamic, user-friendly websites. Aside from
+                        coding, I'm into <b>fishkeeping and aquascaping</b>, with over a year of experience creating and
+                        maintaining beautiful aquariums.
                     </p>
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow-up.png" alt="arrow" class="icon arrowup" onclick="location.href='#'">
         <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#experience'">
     </section>
     <script src="script.js"></script>
