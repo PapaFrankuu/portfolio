@@ -2,10 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  transition: background-color 1s ease-in-out, color 0.1s ease-in-out, filter 1s ease-in-out, icon 1s ease-in-out;
 }
 body {
   font-family: "poppins", "sans-serif";
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -258,4 +259,44 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+/* darkmode switch */
+#dark-mode-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+
+#dark-mode-toggle img {
+  width: 30px;
+  transition: transform 0.3s ease-in;
+}
+
+.dark-mode #dark-mode-icon {
+  transform: rotate(180deg);
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Optional: Style other elements */
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode a {
+  color: white;
+}
+.dark-mode .logo {
+  color: white;
+}
+.dark-mode .details-container {
+  background-color: rgb(19,18,19);
+  color: white;
+}
+.dark-mode .icon {
+  filter: brightness(0) invert(1);
 }
