@@ -137,13 +137,9 @@ section {
 }
 .section__pic-container {
   display: flex;
-  height: 100%;
-  width: 100%;
-  max-height: 400px;
-  max-width: 400px;
+  height: 400px;
+  width: 400px;
   margin: auto 0;
-  border-radius: 50%;
-  overflow: hidden;
 }
 .section__text {
   align-self: center;
@@ -219,10 +215,47 @@ section {
 .icon:hover {
   transform: scale(1.2);
 }
-.insta-gif {
-  animation-play-state: paused;
-  animation-duration: 1s; /* Assuming your GIF duration is 1 second */
+/* about section */
+#about{
+  position: relative;
 }
-.insta-gif:hover {
-  animation-play-state: running;
+.about-containers{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.about-detail-container{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers, .about-detail-container{
+  display: flex;
+}
+
+.about-pic{
+  border-radius: 2rem;
+}
+.arrow{
+  position:absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53)0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.section-container{
+  gap: 8rem;
+  height: 80%;
+}
+.section__pic-container{
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
