@@ -17,7 +17,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -34,7 +34,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -48,18 +48,56 @@
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Rishan Shrestha</h1>
             <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ')">My CV</button>
-             <!-- window.open('./assets/CV.pdf') -->
-            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ')">My CV</button>
+                <!-- window.open('./assets/CV.pdf') -->
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <a style="color: rgb(9,103,255);" href="https://www.facebook.com/profile.php?id=100072666426448"
+                    target="_blank"><img src="./assets/fb.png" alt="" class="icon"></a>
+                <a href="https://www.instagram.com/i_beat_my_kiddo/" target="_blank"><img src="./assets/insta.png"
+                        alt="" class="icon"></a>
+                <a style="color:rgb(0,119,181)" href="https://www.linkedin.com/in/rishan-shrestha-0b0b3b1b3/"
+                    target="_blank"><img src="./assets/linkedin.png" alt="" class="icon"></a>
+                <a href="https://github.com/PapaFrankuu" target="_blank"><img src="/assets/github.png" alt=""
+                        class="icon"></a>
+            </div>
         </div>
-        <div id="socials-container">
-            <a style="color: rgb(9,103,255);" href="https://www.facebook.com/profile.php?id=100072666426448" target="_blank"><img src="./assets/fb.png" alt="" class="icon"></a>
-            <a href="https://www.instagram.com/i_beat_my_kiddo/" target="_blank"><img src="./assets/insta.png" alt="" class="icon insta-gif"></a>
-            <a style="color:rgb(0,119,181)" href="https://www.linkedin.com/in/rishan-shrestha-0b0b3b1b3/" target="_blank"><img src="./assets/linkedin.png" alt="" class="icon"></a>
-            <a href="https://github.com/PapaFrankuu" target="_blank"><img src="/assets/github.png" alt="" class="icon"></a>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="" class="about-pic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.ScIT(Hons)</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/aquascape.png" alt="fish icon" class="icon">
+                        <h3>Aquascaping</h3>
+                        <p>1+ years</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Rishan Shrestha, a <b>web developer</b> with over a year of experience. I'm currently pursuing a <b>BSc (Hons) in IT</b> and love building dynamic, user-friendly websites. Aside from coding, I'm into <b>fishkeeping and aquascaping</b>, with over a year of experience creating and maintaining beautiful aquariums.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='#experience'">
     </section>
     <script src="script.js"></script>
 </body>
