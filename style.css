@@ -2,11 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  transition: background-color 1s ease-in-out, color 0.1s ease-in-out, filter 1s ease-in-out, icon 1s ease-in-out;
+  transition: background-color 1s ease-in-out, color 1ms ease-out, filter 1s ease-in-out;
 }
 body {
   font-family: "poppins", "sans-serif";
-  background-color: white;
+  background-color:white;
 }
 html {
   scroll-behavior: smooth;
@@ -242,10 +242,15 @@ section {
   right: -5rem;
   bottom: 2.5rem;
 }
+.arrowup{
+  position: absolute;
+  right:-5rem;
+  bottom:5rem;
+}
 .details-container{
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: none;
   border-radius: 2rem;
   border: rgb(53, 53, 53)0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -267,17 +272,26 @@ section {
   border: none;
   margin-left: 10px;
 }
+.dark-mode h1{
+  color:white;
+  transition: 0.5s ease;
+}
 
 #dark-mode-toggle img {
   width: 30px;
   transition: transform 0.3s ease-in;
 }
 
-.dark-mode #dark-mode-icon {
+.dark-mode #dark-mode-icon{
   transform: rotate(180deg);
 }
+
+.dark-mode #hamburger-dark-mode-icon{
+  transform: rotate(180deg);
+}
+
 body.dark-mode {
-  background-color: #121212;
+  background-color: rgb(19,18,19);
   color: #ffffff;
 }
 
@@ -298,5 +312,45 @@ body.dark-mode {
   color: white;
 }
 .dark-mode .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Links */
+.dark-mode a {
+  color: white;
+}
+
+/* Navigation */
+.dark-mode .logo {
+  color: white;
+}
+
+.dark-mode p{
+  color: hsl(0, 0%, 100%);
+}
+
+/* Details Containers */
+.dark-mode .details-container {
+  background:none;
+  background-color: none;
+  color: white;
+}
+
+/* Icons */
+.dark-mode .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Buttons */
+.dark-mode button {
+  background-color: none;
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.dark-mode .menu-links {
+  background-color: red;
+}
+.dark-mode .hamburger-icon{
   filter: brightness(0) invert(1);
 }
