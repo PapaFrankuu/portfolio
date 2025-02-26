@@ -131,6 +131,37 @@ section {
   display: flex;
 }
 /* profile */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.rocket {
+  width: 20px; /* Adjust rocket size */
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(-50%, -50%) rotate(0deg); /* Start facing right */
+  animation: rocketWiggle 2s infinite ease-in-out;
+}
+
+@keyframes rocketWiggle {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg); 
+  }
+  25% {
+    transform: translate(-10%, -100%) rotate(45deg); 
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg); 
+  }
+  75% {
+    transform: translate(-100%, -100%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg); 
+  }
+}
 #profiles {
   display: flex;
   justify-content: center;
@@ -304,6 +335,15 @@ article.icon {
 #gallery{
   position: relative;
 }
+#gallery h1{
+  text-decoration: underline 2px;
+  text-underline-offset: 20px;
+  padding-bottom: 30px;
+}
+#gallery h1 span{
+  font-weight: 100;
+
+}
 .image{
   max-width: 100%;
   height: auto;
@@ -320,6 +360,8 @@ article.icon {
   height: 100%;
   object-fit: cover;
   border: radius 5px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 25px;
 
 }
 .grid-wrapper{
@@ -339,6 +381,10 @@ article.icon {
   grid-column: span 2;
   grid-row: span 2
 }
+.grid-wrapper .image:hover{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+}
 
 /* darkmode switch */
 #dark-mode-toggle {
@@ -346,6 +392,9 @@ article.icon {
   background: none;
   border: none;
   margin-left: 10px;
+}
+.darkmode .rocket{
+  background-color:#333;
 }
 .dark-mode h1 {
   color: white;
