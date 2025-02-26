@@ -2,11 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  transition: background-color 1s ease-in-out, color 1ms ease-out, filter 1s ease-in-out;
+  transition: background-color 1s ease-in-out, color 1ms ease-out,filter 1s ease-in-out;
+  box-sizing: border-box;
 }
 body {
   font-family: "poppins", "sans-serif";
-  background-color:white;
+  background-color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -135,6 +136,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  position: relative;
 }
 .section__pic-container {
   display: flex;
@@ -217,54 +219,144 @@ section {
   transform: scale(1.2);
 }
 /* about section */
-#about{
+#about {
   position: relative;
 }
-.about-containers{
+.about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.about-detail-container{
+.about-detail-container {
   justify-content: center;
   flex-direction: column;
 }
 
-.about-containers, .about-detail-container{
+.about-containers,
+.about-detail-container {
   display: flex;
 }
 
-.about-pic{
+.about-pic {
   border-radius: 2rem;
 }
-.arrow{
-  position:absolute;
+.arrow {
+  position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
-.arrowup{
+.arrowup {
   position: absolute;
-  right:-5rem;
-  bottom:5rem;
+  right: -5rem;
+  bottom: 5rem;
 }
-.details-container{
+.details-container {
   padding: 1.5rem;
   flex: 1;
   background: none;
   border-radius: 2rem;
-  border: rgb(53, 53, 53)0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-.section-container{
+.section-container {
   gap: 8rem;
   height: 80%;
 }
-.section__pic-container{
+.section__pic-container {
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
+/* Experience Section */
+#experience {
+  position: relative;
+}
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75 rem;
+  margin-bottom: 2rem;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+article.icon {
+  cursor: default;
+}
+/* gallery section */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0px 20px;
+}
+.container .heading{
+  width:20%;
+  padding-bottom: 50px;
+}
+.container .heading h1{
+  border-bottom: 3px solid#222;
+  padding-bottom: 10px;
+}
+.container .heading h1 span{
+  font-weight: 200;
+}
+.container .box{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width:32.5%;
+}
+.container .box .dream img{
+  width:100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+#gallery{
+  position: relative;
+}
+
+@media only screen and (max-width:769px) {
+  .container .box{
+    flex-direction: column;
+  }
+  .container .box .dream{
+    width:100%;
+  }
+}
+@media only screen and (max-width:1165px) {
+  .container .heading{
+    width:100%;
+  }
+  .container .heading h1{
+    font-size: 1em;
+  }
+}
+
 /* darkmode switch */
 #dark-mode-toggle {
   cursor: pointer;
@@ -272,8 +364,8 @@ section {
   border: none;
   margin-left: 10px;
 }
-.dark-mode h1{
-  color:white;
+.dark-mode h1 {
+  color: white;
   transition: 0.5s ease;
 }
 
@@ -282,16 +374,16 @@ section {
   transition: transform 0.3s ease-in;
 }
 
-.dark-mode #dark-mode-icon{
+.dark-mode #dark-mode-icon {
   transform: rotate(180deg);
 }
 
-.dark-mode #hamburger-dark-mode-icon{
+.dark-mode #hamburger-dark-mode-icon {
   transform: rotate(180deg);
 }
 
 body.dark-mode {
-  background-color: rgb(19,18,19);
+  background-color: rgb(19, 18, 19);
   color: #ffffff;
 }
 
@@ -308,7 +400,7 @@ body.dark-mode {
   color: white;
 }
 .dark-mode .details-container {
-  background-color: rgb(19,18,19);
+  background-color: rgb(19, 18, 19);
   color: white;
 }
 .dark-mode .icon {
@@ -325,13 +417,13 @@ body.dark-mode {
   color: white;
 }
 
-.dark-mode p{
+.dark-mode p {
   color: hsl(0, 0%, 100%);
 }
 
 /* Details Containers */
 .dark-mode .details-container {
-  background:none;
+  background: none;
   background-color: none;
   color: white;
 }
@@ -351,6 +443,6 @@ body.dark-mode {
 .dark-mode .menu-links {
   background-color: red;
 }
-.dark-mode .hamburger-icon{
+.dark-mode .hamburger-icon {
   filter: brightness(0) invert(1);
 }
